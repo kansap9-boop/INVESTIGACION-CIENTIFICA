@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: #ff6347;
+}
+
+
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* página de bienvenida-Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: lightgray no-repeat center/cover;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background: black;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #333;
+    transform: translateY(-3px);
+}
+
+/* sección de tarjetas */
+.cards-container {
+    padding: 3rem;
+    background: #f9f9f9;
+}
+
+.cards-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+
+.card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* Sección acerca de nosotros */
+.about-section {
+    padding: 3rem;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+.about-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.about-section p {
+    font-size: 1.3rem;
+}
+
+/* pie de página */
+footer {
+    padding: 1.5rem;
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+footer img {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        background: #000;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+    }
+
+    .burger {
+        display: flex;
+    }

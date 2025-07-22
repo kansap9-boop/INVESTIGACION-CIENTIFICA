@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico DE LA ENFERMEDAD RENAL CRONICA</title>
+    <link rel="stylesheet" href="../pincipal/template/principal.css">
+</head>
+<body>
+    <nav class ="navbar">
+        <div class="logo"> GRUPO 3 </div>
+        <ul>
+            <li><a href="#INICIO">INICIO</a></li>
+            <li><a href="#PRESENTACION">PRESENTACION</a></li>
+            <li><a href="#MACHINELEARNING">MACHINELEARNING/a></li>
+            <li><a href="#GRUPO">GRUPO</a></li>
+        </ul>
+        <button class="burguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <header id="INICIO" class="hero-section">
+        <h1>DIAGNOSTICO DE LA ENFERMEDAD RENAL CRONICA UTILIZANDO MACHINE LEARNING</h1>
+        <p>Un proyecto de investigación para la detección temprana de la enfermedad renal crónica realizado 
+            por estudiantes de la Universidad Nacional del Santander.</p>
+        <a class="btn-primary" href="presentacion.html">EVALUAR</a>
+    </header>   
+    <main>
+        <section id="presentacion" class="cards-container">
+            <h2>PRESENTACION</h2>
+            <p>Esta aplicación utiliza un modelo de Stacking que fuciona dos modelos (Tab-Transformer y Long Short Term Memory) para predecir la probabilidad de
+                que una persona tenga enfermedad renal cronica y garantizar su diagnostico de manera temprana, en función de sus respuestas a una serie de preguntas.
+                Los usuarios responden preguntas sobre datos clinicos, y el modelo evalúa la probabilidad de tener ERC.
+
+                El modelo procesará los datos proporcionados y generará un resultado basado en un análisis estadístico y patrones detectados previamente. 
+                **Advertencia:** Esta herramienta es solo informativa y no sustituye un diagnóstico profesional.
+                Se recomienda realizar una consulta profesional para obtener resultados oficiales y completos.
+            </p>
+        </section>
+        <section id="machinelearning" class="cards-container">
+            <h2>MACHINE LEARNING</h2>
+            <p>El modelo de Stacking combina dos modelos: Tab-Transformer y Long Short Term Memory (LSTM). 
+                El Tab-Transformer es un modelo de aprendizaje profundo diseñado para trabajar con datos tabulares, 
+                mientras que LSTM es una red neuronal recurrente que maneja secuencias de datos. 
+                Juntos, estos modelos permiten una predicción más precisa de la enfermedad renal crónica.</p>
+            <p>El modelo se entrena con un conjunto de datos que incluye información clínica y demográfica de pacientes con y sin enfermedad renal crónica.
+                Durante el entrenamiento, el modelo aprende a identificar patrones y relaciones entre las características de los pacientes y la presencia de la enfermedad.
+                Una vez entrenado, el modelo puede predecir la probabilidad de que un nuevo paciente tenga enfermedad renal crónica basándose en sus respuestas a las preguntas del cuestionario.</p>
+            <p>El modelo de Stacking se implementa utilizando la biblioteca de aprendizaje automático Scikit-learn, que proporciona herramientas para la creación y evaluación de modelos de machine learning.</p>
+
+        </section>
+        <section id="GRUPO" class="about-section">
+            <h2>GRUPO</h2>
+            <p>Este proyecto fue realizado por estudiantes de la Universidad Nacional del Santa, 
+                quienes se unieron para aplicar sus conocimientos en machine learning y contribuir a la detección temprana de la enfermedad renal crónica.</p>
+            <p>El equipo está compuesto por:</p>
+            <ul>
+                <li>Norabuena Melgarejo Joshua</li>
+                <li>Robles Cueva Maddox</li>
+                <li>Olortigue Sander</li>
+                <li>Santa Cruz Maria</li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Grupo 3. Todos los derechos reservados.</p>
+        <img src="../aña/imagenes/Imagen de WhatsApp 2025-07-17 a las 11.43.08_05fe187f.jpg" alt="GRUPO DE INVESTIGACION">
+    </footer>
+ </body>
+</html>
