@@ -302,8 +302,10 @@ html_template = """
     </main>
     
     <footer>
-        <p>&copy; 2023 Grupo 3. Todos los derechos reservados.</p>
         <img src="/static/images/grupo.jpg" alt="GRUPO DE INVESTIGACION">
+        <p>Grupo de investigacion de la promocion 2024, Ingeniería de Sistemas e informática
+        con el profesor Daza Vergaray</p>
+        <p>&copy; 2025 Grupo 3. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
@@ -462,7 +464,7 @@ evaluacion_template = """
         
         .image-container {
             text-align: center;
-            margin: 20px 0;
+            margin: 50px 0;
         }
         
         .image-container img {
